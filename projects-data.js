@@ -84,17 +84,4 @@ window.PORTFOLIO_PROJECTS = [
     live: null,
     updated: "Mar 2026",
   },
-  {
-    title: "skills-introduction-to-github",
-    category: "Learning",
-    language: "GitHub",
-    featured: false,
-    description: "Hands-on repository for GitHub flow, branching, and pull-request collaboration.",
-    bullets: ["Version control practice", "Collaboration basics"],
-    tags: ["git", "github", "learning"],
-    stars: null,
-    github: "https://github.com/gabrielnguyen2603/skills-introduction-to-github",
-    live: null,
-    updated: "Jun 2025",
-  },
 ];
