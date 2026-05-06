@@ -95,8 +95,10 @@
     if (projectPreset === "all") {
       categoryFilter.value = "all";
       categoryFilter.disabled = true;
+      categoryFilter.setAttribute("aria-disabled", "true");
     } else {
       categoryFilter.disabled = false;
+      categoryFilter.setAttribute("aria-disabled", "false");
     }
   }
 

@@ -313,6 +313,7 @@ body {
   padding-bottom: 0.35rem;
   gap: 1rem;
   align-items: stretch;
+  flex-wrap: nowrap;
 }
 
 .skill-panel {
@@ -816,6 +817,7 @@ textarea {
     align-items: start;
   }
 
+  .panel.skills .panel-grid,
   .panel.studio .panel-grid,
   .panel.projects .panel-grid,
   .panel.story .panel-grid,
