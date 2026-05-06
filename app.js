@@ -90,6 +90,16 @@
       projectPreset === "featured" ? "Dynamic preset: Featured" : "Dynamic preset: All projects";
   }
 
+  function syncFilterForPreset() {
+    if (!categoryFilter) return;
+    if (projectPreset === "all") {
+      categoryFilter.value = "all";
+      categoryFilter.disabled = true;
+    } else {
+      categoryFilter.disabled = false;
+    }
+  }
+
   function filteredProjects(items) {
     var next = items.slice();
     var category = categoryFilter ? categoryFilter.value : "all";
@@ -97,6 +107,8 @@
       next = next.filter(function (item) {
         return !!item.featured;
       });
+    } else {
+      category = "all";
     }
     if (category && category !== "all") {
       next = next.filter(function (item) {
@@ -189,6 +201,7 @@
 
   projectPreset = getStoredPreset();
   updatePresetButton();
+  syncFilterForPreset();
   renderProjects();
 
   if (categoryFilter) {
@@ -199,6 +212,7 @@
     presetToggle.addEventListener("click", function () {
       projectPreset = projectPreset === "featured" ? "all" : "featured";
       updatePresetButton();
+      syncFilterForPreset();
       try {
         localStorage.setItem(PRESET_KEY, projectPreset);
       } catch (e) {}

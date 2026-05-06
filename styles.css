@@ -307,8 +307,10 @@ body {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 0.35rem;
   gap: 1rem;
   align-items: stretch;
 }
@@ -320,6 +322,8 @@ body {
   padding: 1rem;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
   min-height: 148px;
+  min-width: 300px;
+  flex: 0 0 300px;
 }
 
 .skill-panel h3 {
@@ -337,7 +341,8 @@ body {
 }
 
 .skill-panel-background {
-  grid-row: span 2;
+  min-width: 420px;
+  flex-basis: 420px;
 }
 
 .skill-icon {
@@ -776,13 +781,18 @@ textarea {
   }
 
   .pillars,
-  .skills-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
 
+  .skills-grid {
+    display: flex;
+  }
+
+  .skill-panel,
   .skill-panel-background {
-    grid-row: auto;
+    min-width: 280px;
+    flex-basis: 280px;
   }
 
   .section-row {
