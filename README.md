@@ -1,6 +1,6 @@
-# Gabriel Nguyen — portfolio site
+# Gabriel Nguyen — Portfolio Site
 
-Static one-page landing page inspired by [Bjorn Melin’s site](https://bjornmelin.io/) and rebuilt with a Swiss/International, typography-first system. Content reflects [Gabriel’s GitHub profile and repositories](https://github.com/gabrielnguyen2603?tab=repositories).
+Professional portfolio site with the same clean structure as [Bjorn Melin's site](https://bjornmelin.io/). A modern, single-page design showcasing data analytics and BI expertise. Content reflects [Gabriel's GitHub profile and repositories](https://github.com/gabrielnguyen2603?tab=repositories).
 
 ## Deploy on GitHub Pages
 
@@ -13,7 +13,7 @@ Static one-page landing page inspired by [Bjorn Melin’s site](https://bjornmel
    cd "C:\Users\nguye\Downloads\Portfolio"
    git init
    git add .
-   git commit -m "Add Decision Briefing Studio portfolio"
+   git commit -m "Add Gabriel Nguyen portfolio"
    git branch -M main
    git remote add origin https://github.com/gabrielnguyen2603/gabrielnguyen2603.github.io.git
    git push -u origin main
